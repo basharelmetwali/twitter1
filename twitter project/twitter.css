@@ -1,0 +1,361 @@
+:root{
+      font-family: "Segoe UI", Arial, sans-serif;
+  font-size:15px ;
+}
+*{
+   box-sizing: border-box;
+ 
+}
+body{
+    display: grid;
+    grid-template-columns: auto 251px 990px auto ;
+    grid-template-rows: 56px auto; 
+    margin: 0px;
+    padding: 12px;
+  position: relative;
+
+}
+nav{
+    display: grid;
+    grid-template-columns: auto 251px;
+    position: fixed;
+    top: 70px;
+     left: 330px;
+}
+.logo{
+  
+    height: 29px;
+    width: 24px;
+    grid-column:2/3 ;
+    color: rgb(29, 155, 240)
+}
+header{
+    display: grid;
+    grid-template-columns: auto 251px 600px auto ;
+    font-size: 15px;
+    font-weight: 900;
+    position: sticky;
+    z-index: 100;
+    left: 310px;
+    top: 5px;
+    
+  
+   background-color: white !important;
+
+
+}
+.middleH p{
+    grid-column: 3/4;
+    margin-top: 7px;
+
+   
+}
+.middleH{
+    display: flex;
+    justify-content: space-between;
+    padding-left:0px 10px ;
+    
+}
+.middleH img{
+    width: 20px;
+    height: 20px;
+    margin-top: 7px;
+
+}
+.rightH{
+    margin-left: 70px;
+}
+.rightH input{
+    width: 350px;
+    height: 44px;
+    background-color: #eff3f4;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 80px;
+    background-image: url(https://cutewallpaper.org/21/search-icon-transparent-background/Library-Search-Icon-9974-Free-Icons-and-PNG-Backgrounds.png);
+    background-size: 25px;
+    background-position: 20px;
+    background-repeat: no-repeat;
+}
+input:focus{
+    border: rgb(29, 155, 240) 1.5px solid;
+
+}
+nav{
+    grid-column: 2/2;
+    font-size: 14px;
+    display: flex;
+    grid-row: 2/2;
+    flex-direction: column;
+   }
+.logonav{
+    width: 26px;
+    height: 26px;
+    
+ 
+}
+nav>div{
+    display: flex;
+  margin-top: 2px;
+    align-items: center;
+    cursor: pointer;
+    width: fit-content;
+    height: 65x;
+    padding: 0px 10px;
+}
+nav div>p{
+    margin-left: 20px;
+    padding-right: 12px;
+}
+nav>div:hover{
+    background-color: #eff3f4;
+    border-radius: 40px;
+}
+nav button:last-child{
+    width: 250px;
+     height: 62px;
+     border:none ;
+     outline: none;
+      border-radius: 30px;
+       background-color: transparent;
+       display: flex; 
+       align-items: center;
+       justify-content: center;
+       font-size:15px ;
+       position: relative;
+       top: 350px;
+  
+}
+nav button:last-child:hover{
+    background-color: #eff3f4;
+}
+.timeline{
+  
+  
+    grid-column: 3/3;
+    grid-row: 2/2;
+    position: absolute;
+    border: 1px #eff3f4 solid;
+    width: 605px;
+    border-bottom:none ;
+    border-top: none;
+   
+}
+
+.timeline input {
+    width: 540px;
+    height: 105px;
+    position: absolute;
+    left: 54px;
+    font-size: 19px;
+    padding-left: 17px;
+    outline: none;
+    top: -22px;
+    border: none;
+  
+}
+.timeline img{
+    position: relative;
+    z-index: 4;
+    margin-left: 10px;
+
+}
+.tweet{
+    width: 600px;
+    height: 160px;
+    border: #eff3f4 1px solid;
+    border-top: none;
+}
+svg{
+-webkit-text-size-adjust: 100%;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+pointer-events: auto;
+cursor: pointer;
+font: 14px -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+white-space: pre-wrap;
+text-align: center;
+-webkit-box-direction: normal;
+overflow-wrap: break-word;
+line-height: 20px;
+font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+font-size: 15px;
+font-weight: 700;
+display: inline-block;
+fill: currentcolor;
+max-width: 100%;
+position: relative;
+vertical-align: text-bottom;
+user-select: none;
+color: rgb(29, 155, 240);
+height: 20px;
+width: 20px;}
+.reactions {
+    display: flex;
+    width: 208px;
+    justify-content: space-between;
+    position: relative;
+    top: 65px;
+    left: 66px;
+}
+.timeline button:only-of-type {
+    width: 76px;
+    height: 35px;
+    background-color: rgb(29, 155, 240);
+    color: white;
+    border-radius: 25px;
+    border: none;
+    position: relative;
+    top: 37px;
+    left: 490px;
+    font-weight: bold;
+}
+.timeline button::before{
+    content: "";
+    background-color: #eff3f4;
+    width: 400px;
+    height: 2px;
+    position: relative;
+    z-index: 10000;
+}
+.show {
+    width: 600px;
+    display: flex;
+    border-bottom: 1px #eff3f4 solid;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(29, 155, 240);
+    cursor: pointer;
+}
+.show:hover{
+    background-color: #eff3f4;
+
+}
+button{
+
+}
+.reactions svg :hover{
+    background-color: rgba(29, 156, 240, 0.308);
+    border-radius: 50%;
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 48px 80px 165px auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+
+}
+ .log button{
+width: 30px;
+height: 30px;
+}
+ .log {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 40px;
+}
+.bt1{
+    background-image: url(https://www.seekpng.com/png/full/237-2374432_twitter-button-png-retweet-icon.png);
+    background-size:15px 15px ;
+    background-position: center center;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+.bt1:hover{
+    background-color: rgba(126, 219, 126, 0.644);
+    cursor: pointer;
+}
+.bt2{
+    background-image: url(file:///C:/Users/bb633/OneDrive/Desktop/twitter%20project/images/favorite_border_black_24dp.svg);
+    background-size:20px 20px ;
+    background-position: center center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+.bt3{
+    background-image: url(file:///C:/Users/bb633/OneDrive/Desktop/twitter%20project/images/file_download_black_24dp.svg);
+    background-size:20px 20px ;
+    background-position: center center;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+.bt2:hover{
+    background-color: rgba(224, 127, 127, 0.918);
+    cursor: pointer;
+}
+.bt3:hover{
+    background-color:rgba(79, 155, 206, 0.575) ;
+    cursor: pointer;
+}
+.tweets:hover{
+    background-color: #eff3f4;
+}
+.tweets{
+    height: 640px;
+}
+*{
+    background-repeat:no-repeat ;
+}
+
+.bt4{
+    background-image: url(https://i.imgur.com/WYdU3H2.png);
+    background-size:20px 20px ;
+    background-position: center center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+}
+.bt4:hover{
+    background-color:rgba(79, 155, 206, 0.575) ;
+    cursor: pointer;
+}
+span{
+
+        width: 545px;
+        height: 2px;
+        background-color: #eff3f4;
+        position: relative;
+        left: 33px;
+        top: 149px;
+
+}
+.stars:hover{
+    background-color: #a7a7a7;
+  border-radius: 50%;
+
+}
+.buet:hover{
+    background-color: rgb(8, 99, 160) !important;
+    cursor: pointer;
+}
+aside{
+    
+        height: 548px;
+        width: 343px;
+        background-color: #eff3f4;
+        border-radius: 30px;
+        position: absolute;
+        right: 300px;
+        top: 63px;
+      
+    
+}
+aside div:hover,
+aside button:hover{
+    background-color: #c5c5c5;
+}
+aside div{
+    padding-left: 20px;
+    padding-right: 20px;
+}
